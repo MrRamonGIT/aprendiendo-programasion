@@ -1,12 +1,14 @@
 
 public class main {
     public static void main(String[] args){
-        int valor1 = 10;
-        int valor2 = 10;
-        var total = suma(valor1,valor2);
-        System.out.println(total);
+        coche miCoche = new coche();
+        miCoche.incremento();
+        System.out.println(miCoche.puertas);
     }
-    public static int suma(int a, int b){
-        return a + b;
-    }
+   static class coche{
+        public int puertas = 4;
+        public void incremento(){
+            this.puertas++;
+        }
+   }
 }
